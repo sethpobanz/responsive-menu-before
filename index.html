@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive Menu">
     <title>Responsive Menu</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,68 +22,60 @@
     <div class="hero">
         <div class="text">
             <div>
-                <h1>Lemur News Central</h1>
-                <p>Your number one source for lemur news</p>
+                <h1>Snow Goose Info Hub</h1>
+                <p>Get to know your geese here</p>
             </div>
         </div>
         <picture>
             <source srcset="images/hero-1600.jpg" media="(min-width: 901px)">
             <source srcset="images/hero-900.jpg" media="(min-width: 601px)">
             <source srcset="images/hero-600.jpg" media="(max-width: 600px)">
-            <img src="images/hero-900.jpg"
-                alt="an up close view of water with some lens flare for drama">
+            <img src="images/hero-900.jpg" alt="an up close view of water with some lens flare for drama">
         </picture>
     </div>
-    <nav>
-        <h2 class="hidden">Main Menu</h2>
-        <ul>
-            <li><a>Home</a></li>
-            <li><a href="form/">Form</a></li>
-            <li><a href="about/">About</a></li>
-            <li><a href="#">Adopt</a></li>
-            <li><a href="#">Share</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="menu-icon">
+            <svg viewbox="0 0 60 60">
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+            </svg>
+        </div>
+        <nav>
+            <h2 class="hidden">Main Menu</h2>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="form/">Form</a></li>
+                <li><a href="about/">About</a></li>
+                <li><a href="#">Adopt</a></li>
+                <li><a href="#">Share</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <article class="panel">
-            <div class="image-wrapper"><img src="images/lemur-1.jpg"
-                    alt="an unknown species lemur"></div>
+            <div class="image-wrapper"><img src="images/card-blue.jpg" alt="an unknown species lemur"></div>
             <div class="text-wrapper">
                 <h2>What you need to know</h2>
-                <p>Lemurs (from Latin <em>lemures</em> &ndash; ghosts or
-                    spirits) are
-                    wet-nosed primates of the
-                    superfamily Lemuroidea, divided into 8 families and
-                    consisting of 15
-                    genera and around 100 existing species. They are native only
-                    to the
-                    island of Madagascar. Most existing lemurs are small, have a
-                    pointed
-                    snout, large eyes, and a long tail. They chiefly live in
-                    trees
-                    (arboreal), and are active at night (nocturnal).</p>
-                <p>Lemurs share resemblance with other primates, but evolved
-                    independently from monkeys and apes. Due to Madagascar's
-                    highly
-                    seasonal climate, lemur evolution has produced a level of
-                    species
-                    diversity rivaling that of any other primate group. Until
-                    shortly
-                    after humans arrived on the island around 2,000 years ago,
-                    there
-                    were lemurs as large as a male gorilla. Most species have
-                    been
-                    discovered or promoted to full species status since the
-                    1990s;
-                    however, lemur taxonomic classification is controversial and
-                    depends
-                    on which species concept is used. </p>
+                <p>The Snow Goose is a white-bodied goose with black wingtips that are barely visible on the ground but
+                    noticeable in flight. The pink bill has a dark line along it, often called a "grinning patch" or
+                    "black lips." You may also see dark morph Snow Geese, or "Blue Geese," with a white face, dark brown
+                    body, and white under the tail. </p>
+                <p>Snow Geese don’t like to travel without the company of another couple dozen geese and can form flocks
+                    of several hundred thousand. Family groups forage together on wintering grounds, digging up roots
+                    and tubers from muddy fields and marshes. In flight, they are steady on the wing with even
+                    wingbeats. </p>
             </div>
         </article>
     </main>
     <footer>
         <p>Foo</p>
     </footer>
+    <script>const header = document.querySelector("header");
+
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+            header.classList.toggle("close");
+        });
+    </script>
 </body>
 
 </html>
